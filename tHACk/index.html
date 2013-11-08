@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>amadeus | Travel Now</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link href="css/thack.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script type="text/javascript" src="scripts/iScroll.js"></script>
+<script>
+
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('wrapper');
+}
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+
+</script>
+</head>
+
+<body>
+<div class="container" id="homeScreen">
+  <div id="wrapper">
+    <div id="scroller">
+      <ul id="thelist">
+        <li class="img">
+          <div class="images"><span class="title">amadeus | <span class="titleName">Travel Now</span></span></div>
+        </li>
+        <li class="headerTxt"> Inspirations </li>
+        <li><span class="facebook">Friends</span><span class="seasonal">Seasonal</span><span class="wellBeing">Well being</span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="button">About amadeus</div>
+  </div>
+</div>
+<div class="popUp">
+  <div class="header">Inspired by friends<span class="close"></span></div>
+  <div class="content">The top three locations where several of your Facebook friends have recently enjoyed visiting, and we're offering you great deals and offers to try it yourself</div>
+  <div>
+    <div class="button">
+      <ul>
+        <li><span>Paris,</span> France</li>
+        <li>Visited by five of yopur friends</li>
+        <li class="icon"></li>
+      </ul>
+    </div>
+    <div class="button">
+      <ul>
+        <li><span>Paris,</span> France</li>
+        <li>Visited by five of yopur friends</li>
+        <li class="icon"></li>
+      </ul>
+    </div>
+    <div class="button">
+      <ul>
+        <li><span>Paris,</span> France</li>
+        <li>Visited by five of yopur friends</li>
+        <li class="icon"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<div class="mask"></div>
+</body>
+</html>
