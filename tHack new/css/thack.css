@@ -601,8 +601,8 @@ div.maps {
 	border-radius:4px;
 	position:absolute;
 	top:5%;
-	left:35%;
-	width:30%;
+	left:30%;
+	width:47%;
 	z-index:200;
 	padding-bottom:50px
 }
@@ -638,22 +638,38 @@ div.maps {
 }
 .tabs span {
 	display:inline-block;
-	width:48.3%;
+	width:47%;
 	padding:10px;
-	text-align:center;background: -webkit-gradient(linear, 0 100%, 0 0, from(#ccc), color-stop(100%, #fff));
+	text-align:center;
+	background: -webkit-gradient(linear, 0 100%, 0 0, from(#ccc), color-stop(100%, #fff));
 	border:1px solid #ccc
 }
 span#packages {
 	border-radius:4px 0 0 0px;
 }
 span#events {
-	border-radius:0 4px 0	0px 0;
+	border-radius:0 4px 0 0px 0;
 }
 .tabs span.selected {
 	background: -webkit-gradient(linear, 0 100%, 0 0, from(#01529f), color-stop(100%, #1875cd));
 	color: #fff;
 	text-shadow: -1px -1px 1px #000;
 }
-.selectOptions.skin.skin-square label{ position:relative; bottom:5px; margin-left:5px}
+.selectOptions.skin.skin-square label {
+	position:relative;
+	bottom:5px;
+	margin-left:5px
+}
+.formContainer label, .popUp1 .skin.skin-square label {
+	position:relative;
+	bottom:5px;
+	margin-left:5px
+}
 
-.formContainer label, .popUp1  .skin.skin-square label{ position:relative; bottom:5px; margin-left:5px}
+.content.packages{ }
+
+.placeDescription.packages div.content img{ float:none;position:relative}
+.packagetitle{ display:block !important; position:absolute; left:50px}
+.PackageDescription{ display:block!important}
+.bookItinerary{ display:block!important}
+.bookItinerary .days{}
