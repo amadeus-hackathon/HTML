@@ -256,6 +256,14 @@ div.images .title .titleName {
 	height:100px;
 	background:#ccc
 }
+
+
+.placeDescription.arrow {
+background:url(../img/arrow1.png) 100% 50% no-repeat; background-size:18px	
+}
+.placeDescription.arrow .content{
+padding-right:40px
+}
 .placeDescription div.content {
 	overflow:hidden
 }
@@ -295,9 +303,9 @@ div.images .title .titleName {
 	color:#5c5c5c
 }
 .placeDetails.events .placeDescription:nth-child(odd) {
-	background:#f3f3f3;
-	border-bottom:1px solid #ccc;
-	border-top:1px solid #ccc
+ background:#f3f3f3;
+ border-bottom:1px solid #ccc;
+ border-top:1px solid #ccc
 }
 .container {
 	border:1px solid #609df0;
@@ -418,18 +426,16 @@ div.images .title .titleName {
 	top: 10px;
 	left: 50%;
 	margin-left: -11px;
-
 }
 .elastislide-horizontal nav span.elastislide-next {
 	right: 10px;
 	left: auto;
-		background: #ddd url(../img/right.png) no-repeat 6px 3px;
+	background: #ddd url(../img/right.png) no-repeat 6px 3px;
 }
 .elastislide-vertical nav span.elastislide-next {
 	bottom: 10px;
 	top: auto;
-		background: #ddd url(../img/left.png) no-repeat 4px 3px;
-
+	background: #ddd url(../img/left.png) no-repeat 4px 3px;
 }
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 .images {
@@ -490,3 +496,19 @@ div.cale div[role="grid"] li[role="rowheader"] div, div.cale ul.rowhead, div.cal
 	right:12px;
 	top:12px
 }
+div.maps {
+	background:#fff;
+	padding:0px
+}
+.bottomPanel{ margin:5px}
+.bottomPanel div{ }
+.bottomPanel div.weather{background:#fff; display:inline-block;width:49.5%; height:100%; border-radius:4px }
+.bottomPanel div.review{background:#fff; float: right;display:inline-block;width:49.5%;  height:100%; border-radius:4px}
+
+
+.wchance-storm{ background:url(../img/weather/chance-storm.png) no-repeat;}
+.wCondition{ padding:10px 10px 10px 100px; font-size:2.5em; background-size:80px 80px}
+.weatherContent{font-size:.3em; display:block}
+.review ul { padding:5px}
+.review ul  li{ font-weight:bold; padding:5px}
+.review ul  li span{ font-weight:normal; display:block; font-size:.8em}

@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 2
         <li class="placeDetails">
           <div class="container">
             <div class="header">Place details</div>
-            <div class="placeDescription">
+            <div class="placeDescription arrow">
               <div class="content"> <img src="img/place.png"> <span><strong>Place:</strong> Bangalore, India</span> </span><strong>Description:</strong> Bangalore is the capital city of the Indian state of Karnataka. Located on the Deccan Plateau in the south-eastern part of Karnataka. 
                 Bangalore is India's third most populous city and fifth-most populous urban agglomeration. Bangalore is known as the Silicon Valley of India 
                 because of its position as the nation's leading Information technology (IT) exporter.[6][7][8] Located at a height of over 3,000 feet (914.4 m) above sea level, </span> </div>
@@ -97,38 +97,10 @@ document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 2
       </ul>
       <!-- End Elastislide Carousel --> 
     </div>
-    
-    
-    <div class="subHeader1">Place of interest near Paris, France<span class="close1"></span></div>
-    <div class="fixed-bar"> 
-      <!-- Elastislide Carousel -->
-      <ul id="carousel1" class="elastislide-list">
-        <li><a href="#"><img src="img/01a.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="img/02a.jpg" alt="image02" /></a></li>
-        <li><a href="#"><img src="img/03a.jpg" alt="image03" /></a></li>
-        <li><a href="#"><img src="img/04a.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="img/05a.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="img/06a.jpg" alt="image01" /></a></li>
-        
-                <li><a href="#"><img src="img/01a.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="img/02a.jpg" alt="image02" /></a></li>
-        <li><a href="#"><img src="img/03a.jpg" alt="image03" /></a></li>
-        <li><a href="#"><img src="img/04a.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="img/05a.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="img/06a.jpg" alt="image01" /></a></li>
-        
-                <li><a href="#"><img src="img/01a.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="img/02a.jpg" alt="image02" /></a></li>
-        <li><a href="#"><img src="img/03a.jpg" alt="image03" /></a></li>
-        <li><a href="#"><img src="img/04a.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="img/05a.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="img/06a.jpg" alt="image01" /></a></li>
-
-
-      </ul>
-      <!-- End Elastislide Carousel --> 
+    <div class="maps">
+      <div class="subHeader1">Places of interest near Paris, France</div>
+      <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=bangalore&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=63.640894,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=Bangalore,+Bangalore+Urban,+Karnataka,+India&amp;ll=12.971599,77.594563&amp;spn=0.624407,1.056747&amp;t=m&amp;z=11&amp;output=embed"></iframe>
     </div>
- 
     <script type="text/javascript" src="scripts/jquerypp.custom.js"></script> 
     <script type="text/javascript" src="scripts/jquery.elastislide.js"></script> 
     <script type="text/javascript">
@@ -137,11 +109,29 @@ document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 2
 				minItems : 2
 			} );
 			
-						$( '#carousel1' ).elastislide( {
-				minItems : 2
-			} );
 			
-		</script> 
+		</script>
+    <div class="bottomPanel">
+      <div class="weather">
+        <div class="weatherStatus">
+          <div class="subHeader">Weather</div>
+          <div class="wCondition wchance-storm">20&deg;C <span class="weatherContent">Chances of strom</span></div>
+        </div>
+        <div class="Currency">
+          <div class="subHeader">Currency</div>
+          <div>86 INR = 1 EURO</div>
+          <div>86 INR = 1 EURO</div>
+        </div>
+      </div>
+      <div class="review">
+        <div class="subHeader">Review</div>
+        <ul>
+          <li>Person 1<span>Some text</span></li>
+          <li>Person 1<span>Some text</span></li>
+          <li>Person 1<span>Some text</span></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 </body>

@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	
 	
-		$(".mask, .popUp").hide();
+		$(".mask, .popUp, .newPopup").hide();
 	
 	//search tab
 		
@@ -13,6 +13,17 @@ $(document).ready(function() {
 		$(".close").click(function(){
 		$(".mask, .popUp").hide();
 		})
+		
+		$(".placeDescription.arrow").click(function(){
+		$(".newPopup").show();
+		})
+		
+		
+				$(".close1").click(function(){
+		$(".newPopup").hide();
+		})
+		
+		
 });
 
 
