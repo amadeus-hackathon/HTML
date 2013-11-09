@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	
 	
-		$(".mask, .popUp, .newPopup, .popUp1, #eventslist").hide();
+		$(".mask, .popUp, .newPopup, .popUp1, #eventslist, .popup2").hide();
 	
 	//search tab
 		
@@ -51,6 +51,19 @@ $(document).ready(function() {
 				
 		});
 		
+		
+		$(".bookButton").click(function(){
+		$(".popup2, .mask").show();
+
+				
+		});
+		
+		$(".close3").click(function(){
+  		$(".popup2, .mask").hide();
+
+		  
+  });
+  
 		
 		
 		
