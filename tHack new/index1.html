@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Customize checkboxes and radio buttons with iCheck (jQuery and Zepto) plugin</title>
+<meta charset="utf-8">
+<meta content="width=device-width" name="viewport">
+<link href="css/_all.css" rel="stylesheet">
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.icheck.min.js"></script>
+</head>
+<body>
+    <div class="skin skin-square">
+
+              <span>
+                <input tabindex="9" type="checkbox" id="square-checkbox-1">
+                <label for="square-checkbox-1">Checkbox 1</label>
+              </span>
+              <span>
+                <input tabindex="10" type="checkbox" id="square-checkbox-2" checked>
+                <label for="square-checkbox-2">Checkbox 2</label>
+              </span>
+              <span>
+                <input tabindex="11" type="radio" id="square-radio-1" name="square-radio">
+                <label for="square-radio-1">Radio button 1</label>
+              </span>
+              <span>
+                <input tabindex="12" type="radio" id="square-radio-2" name="square-radio" checked>
+                <label for="square-radio-2">Radio button 2</label>
+              </span>
+            
+
+          <script>
+            $(document).ready(function(){
+              $('.skin-square input').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+                increaseArea: '20%'
+              });
+            });
+            </script> 
+
+</div>
+</body>
+</html>
