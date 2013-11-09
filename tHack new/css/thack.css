@@ -559,9 +559,6 @@ div.maps {
 	padding:5px
 }
 .formElements.where div {
-
-	margin-right:10px;
-	padding:0 10px
 }
 .formElements.where div .dB {
 	display:block;
@@ -576,9 +573,9 @@ div.maps {
 .selectOptions {
 	padding:10px 10px 10px 15px
 }
-
-.dB.select{ margin-top:10px}
-
+.dB.select {
+	margin-top:10px
+}
 .selectOptions .title {
 	font-size:1em;
 	font-weight:bold;
@@ -633,6 +630,30 @@ div.maps {
 	display:block;
 	padding:10px
 }
-.selectOptions label, .formElements.where label{ margin-right:20px} 
+.selectOptions label, .formElements.where label {
+	margin-right:20px
+}
+.popUp1 #footer div.button {
+	margin:5px
+}
+.tabs span {
+	display:inline-block;
+	width:48.3%;
+	padding:10px;
+	text-align:center;background: -webkit-gradient(linear, 0 100%, 0 0, from(#ccc), color-stop(100%, #fff));
+	border:1px solid #ccc
+}
+span#packages {
+	border-radius:4px 0 0 0px;
+}
+span#events {
+	border-radius:0 4px 0	0px 0;
+}
+.tabs span.selected {
+	background: -webkit-gradient(linear, 0 100%, 0 0, from(#01529f), color-stop(100%, #1875cd));
+	color: #fff;
+	text-shadow: -1px -1px 1px #000;
+}
+.selectOptions.skin.skin-square label{ position:relative; bottom:5px; margin-left:5px}
 
-.popUp1  #footer div.button{ margin:5px}
+.formContainer label, .popUp1  .skin.skin-square label{ position:relative; bottom:5px; margin-left:5px}

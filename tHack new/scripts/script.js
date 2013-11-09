@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	
 	
-		$(".mask, .popUp, .newPopup, .popUp1").hide();
+		$(".mask, .popUp, .newPopup, .popUp1, #eventslist").hide();
 	
 	//search tab
 		
@@ -21,17 +21,35 @@ $(document).ready(function() {
 		
 				$(".close1").click(function(){
 		$(".newPopup").hide();
-		})
+		});
 		
 		
 						$("#mCondition, label[for='mCondition']").click(function(){
 		$(".mask, .popUp1").show();
-		})
+		});
 				
 						$(".close2, .done").click(function(){
 		$(".mask, .popUp1").hide();
-		})
+		});
 		
+		$("#events").click(function(){
+		$("#eventslist").show();
+		$("#packageList").hide();
+		$("#packages").removeClass("selected");
+		$("#events").addClass("selected");
+		myScroll.refresh()
+				
+		});
+		
+		
+		$("#packages").click(function(){
+		$("#eventslist").hide();
+		$("#packageList").show();
+		$("#packages").addClass("selected");
+		$("#events").removeClass("selected");
+		myScroll.refresh()
+				
+		});
 		
 		
 		

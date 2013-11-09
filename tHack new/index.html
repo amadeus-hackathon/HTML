@@ -8,6 +8,19 @@
 <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="scripts/script.js"></script>
 <script type="text/javascript" src="scripts/iScroll.js"></script>
+
+<link href="css/_all.css" rel="stylesheet">
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.icheck.min.js"></script>
+          <script>
+            $(document).ready(function(){
+              $('.skin-square input').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+                increaseArea: '20%'
+              });
+            });
+            </script> 
 <script>
 
 //var myScroll;
@@ -30,8 +43,8 @@
         </li>
         <li class="headerTxt"> Well being travel </li>
         <li>
-          <div class="formContainer">
-            <div class="formElements where">
+        <div class="formContainer">
+            <div class="formElements where skin skin-square">
               <div><span class="dB">I want to travel</span>
                 <input name="where" type="radio" value="" checked id="domestic">
                 <label for="domestic">Domestic</label>
@@ -47,7 +60,7 @@
                 </select>
               </div>
             </div>
-            <div class="selectOptions">
+            <div class="selectOptions  skin skin-square">
               <div class="title">I am travelling for</div>
               <input name="" type="checkbox" value="" id="healthandwell">
               <label for="healthandwell">Health and well</label>
@@ -103,7 +116,7 @@
 </div>
 <div class="popUp1">
   <div class="header">Tell us more about your health conditions<span class="close2"></span></div>
-  <div class="list"> <span>
+  <div class="list skin skin-square"> <span>
     <input name="" type="checkbox" value="" id="df">
     <label for="df">Diabetic food</label>
     </span> <span>
